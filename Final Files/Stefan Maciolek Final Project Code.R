@@ -1,13 +1,18 @@
 ######STEFAN MACIOLEK - 19:690:565 - TIME SERIES ANALYSIS - CODE
 
 #IMPORT SECTION
-#In order for this code to be reproducible, these will need to be updated to the locations 
-#of the saved data files.  Nothing else in the code will need to be updated
+#In order for this code to be reproducible, the path variable will need to be updated to where
+#the final data file has been saved.  Nothing else in the code will need to be updated
 library(readxl)
-cmonth <- read_xlsx("C:\\Users\\Stvma\\Documents\\GitHub\\TSA-final-project\\Final Files\\Stefan Maciolek - Final Project Data.xlsx",sheet=2)
-nmonth <- read_xlsx("C:\\Users\\Stvma\\Documents\\GitHub\\TSA-final-project\\Final Files\\Stefan Maciolek - Final Project Data.xlsx",sheet=4)
-cyear <- read_xlsx("C:\\Users\\Stvma\\Documents\\GitHub\\TSA-final-project\\Final Files\\Stefan Maciolek - Final Project Data.xlsx",sheet=1)
-nyear <-  read_xlsx("C:\\Users\\Stvma\\Documents\\GitHub\\TSA-final-project\\Final Files\\Stefan Maciolek - Final Project Data.xlsx",sheet=3)
+
+##UPDATE HERE:
+path <- "C:\\Users\\Stvma\\Documents\\TSA-final-project\\Final Files\\Stefan Maciolek - Final Project Data.xlsx"
+
+#########################################3
+cmonth <- read_xlsx(path,sheet=2)
+nmonth <- read_xlsx(path,sheet=4)
+cyear <- read_xlsx(path,sheet=1)
+nyear <-  read_xlsx(path,sheet=3)
 
 #DATA PRE-PROCESSING
 #adding the population to the monthly files
