@@ -6,7 +6,7 @@
 library(readxl)
 
 ##UPDATE HERE:
-path <- "C:\\Users\\Stvma\\Documents\\TSA-final-project\\Final Files\\Stefan Maciolek - Final Project Data.xlsx"
+path <- "C:\\Users\\Stvma\\Documents\\GitHub\\TSA-final-project\\Final Files\\Stefan Maciolek - Final Project Data.xlsx"
 
 #########################################3
 cmonth <- read_xlsx(path,sheet=2)
@@ -151,6 +151,7 @@ pacf(na.omit(as.vector(ndiff)),main="Partial Autocorreleation", lag.max=40)
 #spectral
 periodogram(na.omit(as.vector(ndiff)),main="Periodogram")
 
+#not every model that was tested appears here
 npmodel <- arima(np, order=c(0,0,1),seasonal=list(order=c(0,1,1),period=12))
 npmodel
 npmodel2 <- arima(np, order=c(0,0,4),seasonal=list(order=c(0,1,1),period=12))
