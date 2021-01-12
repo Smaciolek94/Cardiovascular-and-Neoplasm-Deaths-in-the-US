@@ -1,4 +1,4 @@
-# TSA-final-project
+# Time Series analysis of Cardiovascular and Neoplasm Deaths in the US
 Final Project For Time Series Analysis: Utilizing Time Series Analysis to model and predict cardiovascular and neoplasm deaths in The United States using data obtained from the CDC.
 
 The repository contains raw text files that were obtained via the CDC for cardiovascular and neoplasm deaths both by month and year, as well as formatted csvs that were read into the analysis program.
